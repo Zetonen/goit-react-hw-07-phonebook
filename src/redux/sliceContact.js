@@ -37,6 +37,5 @@ const slice = createSlice({
         state.error = null;
       }),
 });
-console.log(slice.actions);
 export const { add, remove } = slice.actions;
 export const sliceContact = slice.reducer;

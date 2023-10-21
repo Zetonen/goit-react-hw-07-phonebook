@@ -13,7 +13,6 @@ export const ContactList = () => {
   const loading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const contacts = useSelector(selectVisibleContacts);
-  console.log(contacts);
   const dispatch = useDispatch();
 
   useEffect(() => {
