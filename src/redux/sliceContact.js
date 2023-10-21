@@ -17,7 +17,7 @@ const slice = createSlice({
         state.items = action.payload;
       })
       .addCase(addContact.fulfilled, (state, action) => {
-        state.items.unshift(action.payload);
+        state.items.push(action.payload);
       })
       .addCase(deleteContact.fulfilled, (state, action) => {
         const index = state.items.findIndex(
